@@ -4,12 +4,13 @@ export default styled.div`
   width: 100%;
   height: 45px;
   background-color: #333;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: flex;
   padding: 0 10px;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 
   .title {
     display: flex;

@@ -7,9 +7,11 @@ class MainContainer extends Component {
     return (
       <Wrapper>        
         <ul className="soundTraks">
-          <li>
-            <SoundTrack />
-          </li>
+          <li><SoundTrack /></li>
+          <li><SoundTrack /></li>
+          <li><SoundTrack /></li>
+          <li><SoundTrack /></li>
+          <li><SoundTrack /></li>
         </ul>
       </Wrapper>
     );

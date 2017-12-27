@@ -1,34 +1,11 @@
 import React, { Component } from 'react'
 import MdDelete from 'react-icons/lib/md/delete'
 import MdPlayArrow from 'react-icons/lib/md/play-arrow'
-import MdPlayCircleFilled from 'react-icons/lib/md/play-circle-filled'
-import FaFacebook from 'react-icons/lib/fa/facebook'
-import FaTwitter from 'react-icons/lib/fa/twitter'
+import WaveForm from './WaveForm'
 import Wrapper from './Wrapper'
-import Separator from '../../Separator'
 import photo from './photo.jpg'
 
 class SoundTrack extends Component {
-  constructor(props) {
-    super(props);
- 
-    this.state = {
-      playing: false,
-      pos: 0
-    };
-  }
-
-  handleTogglePlay = () => {
-    this.setState({
-      playing: !this.state.playing
-    });
-  }
-
-  handlePosChange = (e) => {
-    this.setState({
-      pos: e.originalArgs[0]
-    });
-  }
   
   render() {
 
@@ -37,19 +14,7 @@ class SoundTrack extends Component {
         <div className="playerWrapper">
           <img src={photo} className="thumbImage" alt="Thumbnail" />
           <div className="player">
-            <div className="trackDetail">
-              <div className="detail">
-                <div className="playButton"><MdPlayCircleFilled /></div>
-                <div>
-                  <h6>Andrea Charls</h6>
-                  <p>Falling For You</p>
-                </div>
-              </div>
-              <div className="social">
-                <a href="#facebook"><FaFacebook /></a>
-                <a href="#twitter"><FaTwitter /></a>
-              </div>
-            </div>
+            <WaveForm src={'https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3'} />
           </div>
         </div>
         <div className="metaWrapper">
@@ -62,7 +27,6 @@ class SoundTrack extends Component {
               <span className="name">60K</span>
             </div>
         </div>
-        <Separator />
       </Wrapper>
     );
   }

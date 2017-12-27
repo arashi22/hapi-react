@@ -6,6 +6,18 @@ export default styled.div`
   .soundTraks {
     list-style: none;
     margin: 50px 0px;
-    padding-left: 0;
+    padding-bottom: 20px;
+
+    li {
+      border-bottom: 1px solid #CCC;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+
+      &:last-child {
+        border: none;
+        padding-bottom: 70px;
+        margin-bottom: 0;
+      }
+    }
   }
 `

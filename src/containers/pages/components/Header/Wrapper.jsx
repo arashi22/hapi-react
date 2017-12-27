@@ -37,6 +37,7 @@ export default styled.div`
       align-items: center;
       position: relative;
       padding-right: 20px;
+      cursor: pointer;
 
       .photo {
         width: 24px;

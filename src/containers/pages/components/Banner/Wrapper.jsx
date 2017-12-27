@@ -6,6 +6,7 @@ export default styled.div`
   overflow: hidden;
   padding: 0px 32px;
   background: url(${bg}) 100% 32%;
+  background-size: 100% auto;
   display:flex;
   align-items: center;
 

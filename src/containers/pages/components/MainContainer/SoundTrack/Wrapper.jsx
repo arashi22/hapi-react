@@ -16,9 +16,6 @@ export default styled.div`
       position: relative;
 
       .trackDetail {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -61,6 +58,16 @@ export default styled.div`
             color: #000;
             margin-left: 15px;
           }
+        }
+      }
+      .wave {
+        .duration {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          padding: 3px 5px;
+          color: #FFF;
+          background-color: rgba(0, 0, 0, 0.2);
         }
       }
     }

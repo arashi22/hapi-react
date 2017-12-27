@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import SubMenu from './components/SubMenu'
 import MainContainer from './components/MainContainer'
 
-class User extends Component {
+class User extends Component {  
   render() {
     return (
       <div className="App">
