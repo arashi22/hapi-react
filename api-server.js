@@ -1,15 +1,11 @@
 const Path = require('path');
 const Hapi = require('hapi');
-const perm = require('hapi-perm');
 
 (async () => {
     const server = new Hapi.Server({
         port: 5001,
     });
 
-    await server.register(perm);
-
-    const r = require('rethinkdb');    
     server.route({
         method: 'GET',
         path: '/jane',
